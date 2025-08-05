@@ -2,6 +2,7 @@ package com.endava.backend.entities;
 
 import java.math.BigDecimal;
 import java.security.Timestamp;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -44,7 +45,7 @@ public class SavingGoal {
     private BigDecimal savingAmount;
 
     @Column(nullable = false)
-    private Data deadLine;
+    private LocalDate deadLine;
 
     private Timestamp createdAt;
     

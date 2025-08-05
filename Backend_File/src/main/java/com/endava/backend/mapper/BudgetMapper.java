@@ -18,7 +18,7 @@ public class BudgetMapper {
         .updatedAt(dto.getUpdatedAt()).build();
     }
 
-    public BudgetDTO entityToDTO(Budget entity) {
+    public BudgetDTO entityToDto(Budget entity) {
         if(entity == null) return null;
 
         return BudgetDTO.builder().budgetId(entity.getBudgetId()).user(entity.getUser())
@@ -29,7 +29,7 @@ public class BudgetMapper {
     public List<BudgetDTO> entityListToDtoList(List<Budget> entities) {
         if(entities == null) return Collections.emptyList();
 
-        return entities.stream().map(this::entityToDTO).toList();
+        return entities.stream().map(this::entityToDto).toList();
     }
     
 }

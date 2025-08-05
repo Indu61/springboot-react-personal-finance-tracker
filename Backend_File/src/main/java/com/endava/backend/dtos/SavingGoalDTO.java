@@ -2,6 +2,7 @@ package com.endava.backend.dtos;
 
 import java.math.BigDecimal;
 import java.security.Timestamp;
+import java.time.LocalDate;
 
 import com.endava.backend.entities.User;
 
@@ -22,6 +23,6 @@ public class SavingGoalDTO {
     private String goalName;
     private BigDecimal targetAmount;
     private BigDecimal savingAmount;
-    private Data deadLine;
+    private LocalDate deadLine;
     private Timestamp createdAt;
 }
