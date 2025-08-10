@@ -1,0 +1,25 @@
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(255, 162, 2);
+}
+
+.customeApplicationButton {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  background-color: #ee8c0a !important;
+  border-width: 2px !important;
+  font-weight: 800 !important;
+  color: white !important;
+  border-radius: 0.25rem !important;
+  margin: 0px;
+}
+
+.customeApplicationButton:hover {
+  background-color: white;
+  color: #ee8c0a;
+  transform: scale(1);
+  transition-duration: 300ms;
+  border-color: #ee8c0a;
+}
